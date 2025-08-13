@@ -1,0 +1,117 @@
+/* Reset default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading{
+      background: rgba(255, 255, 255, 0.15);
+      font-size: 50px;
+        border-radius: 15px;
+        backdrop-filter: blur(8px);
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: white;
+        font-family: cursive;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+
+/* Main Container */
+.weather-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  width: 350px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Search Bar */
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px 0 0 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.15); 
+  /* background-image:url(clear-blue-sky-few-clouds-600nw-2488278533.webp);
+  color: black; */
+}
+
+.search-box button {
+  background: rgba(255, 255, 255, 0.15); 
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Main Weather Display */
+.main-weather {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-weather .location {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.weather-icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.temperature {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Additional Info */
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.detail-card {
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.detail-card span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.detail-card p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
