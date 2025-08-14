@@ -39,7 +39,7 @@ update_cloud_cover(cloud_cover);
 })
 function update_cityname(cityname , country_code){
    let cityElement = document.querySelector('.location');
-    cityElement.textContent = `🌍 ${cityname}, ${country_code}`; 
+    cityElement.textContent = `🌍 ${cityname.toUpperCase()}, ${country_code}`; 
 };
 function update_sunset(sunset){
     let sunsetElement = document.querySelector('#Sunset');
